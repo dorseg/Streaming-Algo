@@ -28,3 +28,5 @@ v2 = Vertex(2, 12, l2)
 
 print v2>v1
 """
+
+(lambda(x) (display "Hello GitHub!"))
