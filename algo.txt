@@ -1,0 +1,30 @@
+"""
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> RUN THE ALGORITHM
+Init:
+    1. construct graph randomly for the algorithm
+    2. for e in E:
+        Read Edge e
+    3. End: for v in V, s = s + sp(v)
+
+Read_Edge(e=(u,v)):
+    Let u be the vertex s.t. P(u)>P(v)
+    if P(u) is selected label then:
+        P(v) = P(u)+n
+        Sp(v) = Sp(v) + e
+    else if B(P(u)) not in M(v) then
+        M(v) = M(v) + B(P(u))
+        Sp(v) = Sp(v) + e
+"""
+P(v) = n*L(P(u)) + B(P(u)) + n = n*(L(P(u))+1) + B(P(u))
+
+"""
+l1 = Label(1, 2, 3)
+l2 = Label(1, 2, 4)
+print l1
+print l2
+
+v1 = Vertex(1, 2, l1)
+v2 = Vertex(2, 12, l2)
+
+print v2>v1
+"""
